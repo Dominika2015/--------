@@ -5,97 +5,396 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-   <header class="header">
-      <h5 class="h5-header">among as</h5>
-      <p class="p-header">game</p>
-      <p class="p-header">instal</p>
-      <p class="p-header">more</p>
+   <header class="header header-flex container">
+      <h5 class="h5-header">among us</h5>
 
+         <button class="burger-btn" id="burger-btn" aria-label="Відкрити меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+      <nav class="nav"> <a href="https://www.google.com/search?client=safari&rls=en&q=game+among+as&ie=UTF-8&oe=UTF-8"
+            class="a-header">game</a>
+         <a href="https://www.google.com/search?q=daulond+game+among+us&client=safari&hs=LUx&sca_esv=5999353cb99206ac&rls=en&biw=1300&bih=724&sxsrf=APpeQnu-DAsiISNA815MhXk7hW2JWR2EaQ%3A1784535874024&ei=Qttdar6JAfqA9u8Pg6KZKA&ved=0ahUKEwi-svCW6uCVAxV6gP0HHQNRBgUQ4dUDCBA&uact=5&oq=daulond+game+among+us&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWRhdWxvbmQgZ2FtZSBhbW9uZyB1czIJEAAYgAQYDRgTMgkQABiABBgNGBMyCBAAGB4YDRgTMggQABgeGA0YEzIIEAAYHhgNGBMyCBAAGB4YDRgTMgoQABgFGB4YDRgTMgoQABgFGB4YDRgTMgoQABgIGB4YDRgTMgoQABgIGB4YDRgTSKUoUMcJWNsmcAB4A5ABAJgB_AegAZ0eqgENMC43LjMuNS0yLjAuMbgBA8gBAPgBAZgCB6AC5A7CAgQQABhHwgIEECMYJ8ICBhAAGAcYHsICCBAAGAcYHhgKwgIIEAAYCBgHGB7CAgoQABgIGAcYHhgKwgIIECEYoAEYwwSYAwDiAwUSATEgQIgGAZAGCJIHCzIuMi4xLjAuMS4xoAeDQrIHCzAuMi4xLjAuMS4xuAfwDcIHBzMtMS41LjHIB-8BgAgB&sclient=gws-wiz-serp"
+            class="a-header">download</a>
+         <a href="https://en.wikipedia.org/wiki/Among_Us" class="a-header">more</a>
+      </nav>
+      <ul class="header-ul">
+         <li class="header-li"><a href="" class="header-a-li"><svg class="icon" width="24" height="24">
+  <use href="img/symbol-defs.svg#Facebook"></use>
+</svg> </a>
+         </li>
+         <li class=""><a href="" class="header-a-li"><img src="img/Vector-2.png" alt="" class="header-img"></a>
+         </li>
+         <li class="header-li"><a href="" class="header-a-li"><img src="img/Vector-3.png" alt="" class="header-img"></a>
+         </li>
+         <li class="header-li"><a href="" class="header-a-li"><img src="img/Vector-4.png" alt="" class="header-img"></a>
+         </li>
+      </ul>
    </header>
    <main class="main">
-      <section class="section-1">
-         <h3 class="p-section1">Among as</h3>
-         <p class="p-among_as">це надзвичайно популярна багатокористувацька онлайн-гра на виживання та соціальну
-            дедукцію, створена американською студією Innersloth у 2018 році. Завдяки простій механіці, командній
-            взаємодії та елементам психологічної гри вона стала справжнім глобальним хітом.</p>
-         <img src="img/among.jpeg" alt="" class="among_as">
-      </section>
-      <section class="section-2">
+      <section class="section-1 section-1-flex container">
+         <div class="div1">
+            <h3 class="p-section1">Among us</h3>
+            <p class="p-among_as">це надзвичайно популярна багатокористувацька онлайн-гра на виживання та соціальну
+               дедукцію, створена американською студією Innersloth у 2018 році. Завдяки простій механіці, командній
+               взаємодії та елементам психологічної гри вона стала справжнім глобальним хітом.</p>
+            <button class="btn button1" data-modal-open>натисни щоб побачити свою роль</button>
+            <div class="backdrop is-hidden" data-modal>
+               <div class="modal">
+                  <button class="btn-close" data-modal-close>✕</button>
+                  <h2 class="text5555"> you are </h2>
+                  <img class="img5555" src="img/Engineer-1920.jpg"
+                     srcset="img/Engineer-240.jpg 240w, img/Engineer-320.jpg 320w, img/Engineer-640.jpg 640w, img/Engineer-960.jpg 960w, img/Engineer-1920.jpg 1920w"
+                     sizes="(max-width: 575px) calc(100vw - 78px), 400px" alt="">
 
-         <h1 class="section-2">ролі в Among as</h1>
-         <h4 class="h4-section-2">Crewmate</h4>
-         <img src="img/Crewmate_role_reveal_card.webp" alt="" class="img-section-2">
-         <p class="p-section-2">базовий гравець, який виконує таски та намагається вирахувати вбивць на голосуванні.</p>
+               </div>
+            </div></button>
 
-         <h4 class="h4-section-2">Engineer</h4>
-         <img src="img/Engineer.webp" alt="" class="img-section-2">
-         <p class="p-section-2">вміє переміщатися через вентиляційні люки (венти), як і зрадники, але з обмеженням за
-            часом.</p>
-
-         <h4 class="h4-section-2">Scientist</h4>
-         <img src="img/Scientist.webp" alt="" class="img-section-2">
-         <p class="p-section-2"> має портативний монітор життєвих показників (віталс) і може в будь-який момент
-            перевірити, чи живі інші гравці.</p>
-
-         <h4 class="h4-section-2">Noisemaker</h4>
-         <img src="img/Noisemaker_splash_art.webp" alt="" class="img-section-2">
-         <p class="p-section-2"> якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний сигнал на екрані,
-            показуючи всім місце злочину</p>
-
-         <h4 class="h4-section-2">Tracker</h4>
-         <img src="img/999.jpeg" alt="" class="img-section-2">
-         <p class="p-section-2"> може непомітно почепити маячок на будь-якого гравця та бачити його переміщення на карті
-            в реальному часі</p>
-
-         <h4 class="h4-section-2">Detective</h4>
-         <img src="img/maxresdefault.jpg" alt="" class="img-section-2">
-         <p class="p-section-2"> якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний сигнал на екрані,
-            показуючи всім місце злочину</p>
-
-         <h4 class="h4-section-2">Guardian Angel</h4>
-         <img src="img/Guardian_Angel_splash_art.webp" alt="" class="img-section-2">
-         <p class="p-section-2"> перший мирний гравець, який помер. Ставши привидом, він може накладати тимчасовий
-            захисний щит на живих гравців і рятувати їх безпосередньо в момент удару зрадника. </p>
-
-
-         <h4 class="h4-section-2">Impostor</h4>
-         <img src="img/2pqmxf5iisoa1.jpg" alt="" class="img-section-2">
-         <p class="p-section-2"> класичний вбивця, який робить саботажі та непомітно знищує команду</p>
-
-
-         <h4 class="h4-section-2">Shapeshifter</h4>
-         <img src="img/images.jpeg" alt="" class="img-section-2">
-         <p class="p-section-2"> зрадник, який може тимчасово приймати вигляд будь-якого іншого живого члена екіпажу,
-            щоб підставити його. </p>
-
-
-         <h4 class="h4-section-2">Phantom</h4>
-         <img src="img/Phantom_splash_art.webp" alt="" class="img-section-2">
-         <p class="p-section-2"> вміє тимчасово ставати повністю невидимим, щоб влаштовувати засідки чи тікати після
-            вбивства (під час невидимості атакувати не може) </p>
-
-
-         <h4 class="h4-section-2">Viper</h4>
-         <img src="img/Viper_Splash_Art.webp" alt="" class="img-section-2">
-         <p class="p-section-2">нещодавно додана роль, чия здатність замінює звичайне вбивство на «кислотну атаку». Тіло
-            жертви поступово розчиняється. Коли воно зникає повністю, його більше не можна знайти та репортувати </p>
-
-
+         </div>
+         <img src="img/among.jpeg"
+            srcset="img/among-240.jpg 240w, img/among-320.jpg 320w, img/among.jpeg 447w"
+            sizes="(max-width: 767px) calc(100vw - 30px), 40vw" alt="" class="among_as">
 
       </section>
+      <section class="section-2 container ">
 
-      <section class="section-3">
-         <h1 class="h1-section-3">instal</h1>
-         <ul class="section-3-ul">
-            <li class="section-3-ul"><img src="img/app.png" alt=""></li>
-            <li class="section-3-ul"><img src="img/Знімок екрана 2026-07-20 о 08.10.10.png" alt=""></li>
-         </ul>
+         <h1 class="section-2">ролі в Among us</h1>
+         <!-- <div class="section-2-flex"> -->
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+
+                     <h4 class="h4-section-2">Crewmate</h4>
+                     <!-- <img src="img/Crewmate_role_reveal_card.webp" alt="" class="img-section-2"> -->
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Crewmate_role_reveal_card-1920.jpg"
+                           srcset="img/Crewmate_role_reveal_card-240.jpg 240w, img/Crewmate_role_reveal_card-320.jpg 320w, img/Crewmate_role_reveal_card-640.jpg 640w, img/Crewmate_role_reveal_card-960.jpg 960w, img/Crewmate_role_reveal_card-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Crewmate</h2>
+                           <p class="card-text">базовий гравець, який виконує таски та намагається вирахувати вбивць на
+                        голосуванні. </p>
+                        </div>
+                     </article>
+                     <p class="p-section-2">базовий гравець, який виконує таски та намагається вирахувати вбивць на
+                        голосуванні.
+                     </p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Engineer</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Engineer-1920.jpg"
+                           srcset="img/Engineer-240.jpg 240w, img/Engineer-320.jpg 320w, img/Engineer-640.jpg 640w, img/Engineer-960.jpg 960w, img/Engineer-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+         
+         
+                           <div class="overlay">
+                           <h2 class="card-title">Engineer</h2>
+                           <p class="card-text">вміє переміщатися через вентиляційні люки (венти), як і зрадники, але з обмеженням за часом.</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2">вміє переміщатися через вентиляційні люки (венти), як і зрадники, але з
+                        обмеженням
+                        за
+                        часом.</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Scientist</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Scientist-1920.jpg"
+                           srcset="img/Scientist-240.jpg 240w, img/Scientist-320.jpg 320w, img/Scientist-640.jpg 640w, img/Scientist-960.jpg 960w, img/Scientist-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Scientist</h2>
+                           <p class="card-text">має портативний монітор життєвих показників (віталс) і може в будь-який момент перевірити, чи живі інші гравці.</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> має портативний монітор життєвих показників (віталс) і може в будь-який
+                        момент
+                        перевірити, чи живі інші гравці.</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Noisemaker</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Noisemaker_splash_art-1920.jpg"
+                           srcset="img/Noisemaker_splash_art-240.jpg 240w, img/Noisemaker_splash_art-320.jpg 320w, img/Noisemaker_splash_art-640.jpg 640w, img/Noisemaker_splash_art-960.jpg 960w, img/Noisemaker_splash_art-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Noisemaker</h2>
+                           <p class="card-text">якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний сигнал на екрані, показуючи всім місце злочину</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний
+                        сигнал на
+                        екрані,
+                        показуючи всім місце злочину</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Tracker</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/999.jpeg"
+                           srcset="img/999-240.jpg 240w, img/999-320.jpg 320w, img/999.jpeg 597w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Tracker</h2>
+                           <p class="card-text">може непомітно почепити маячок на будь-якого гравця та бачити його переміщення на карті в реальному часі</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> може непомітно почепити маячок на будь-якого гравця та бачити його
+                        переміщення на
+                        карті
+                        в реальному часі</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Detective</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/maxresdefault.jpg"
+                           srcset="img/maxresdefault-240.jpg 240w, img/maxresdefault-320.jpg 320w, img/maxresdefault-640.jpg 640w, img/maxresdefault-960.jpg 960w, img/maxresdefault.jpg 1280w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Detective</h2>
+                           <p class="card-text">якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний сигнал на екрані, показуючи всім місце злочину</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> якщо зрадник вбиває цього гравця, його тіло автоматично видає гучний
+                        сигнал на
+                        екрані,
+                        показуючи всім місце злочину</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Guardian Angel</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Guardian_Angel_splash_art-1920.jpg"
+                           srcset="img/Guardian_Angel_splash_art-240.jpg 240w, img/Guardian_Angel_splash_art-320.jpg 320w, img/Guardian_Angel_splash_art-640.jpg 640w, img/Guardian_Angel_splash_art-960.jpg 960w, img/Guardian_Angel_splash_art-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Guardian Angel</h2>
+                           <p class="card-text">перший мирний гравець, який помер. Ставши привидом, він може накладати тимчасовий захисний щит на живих гравців і рятувати їх безпосередньо в момент удару зрадника.</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> перший мирний гравець, який помер. Ставши привидом, він може накладати
+                        тимчасовий
+                        захисний щит на живих гравців і рятувати їх безпосередньо в момент удару зрадника. </p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Impostor</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/2pqmxf5iisoa1.jpg"
+                           srcset="img/2pqmxf5iisoa1-240.jpg 240w, img/2pqmxf5iisoa1-320.jpg 320w, img/2pqmxf5iisoa1-640.jpg 640w, img/2pqmxf5iisoa1.jpg 800w"
+                           srcset="img/images-240.jpg 240w, img/images.jpeg 299w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Impostor</h2>
+                           <p class="card-text">класичний вбивця, який робить саботажі та непомітно знищує команду</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> класичний вбивця, який робить саботажі та непомітно знищує команду</p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Shapeshifter</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/images.jpeg"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Shapeshifter</h2>
+                           <p class="card-text">зрадник, який може тимчасово приймати вигляд будь-якого іншого живого члена екіпажу, щоб підставити його.</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> зрадник, який може тимчасово приймати вигляд будь-якого іншого живого
+                        члена
+                        екіпажу,
+                        щоб підставити його. </p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Phantom</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Phantom_splash_art-1920.jpg"
+                           srcset="img/Phantom_splash_art-240.jpg 240w, img/Phantom_splash_art-320.jpg 320w, img/Phantom_splash_art-640.jpg 640w, img/Phantom_splash_art-960.jpg 960w, img/Phantom_splash_art-1920.jpg 1920w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Phantom</h2>
+                           <p class="card-text">вміє тимчасово ставати повністю невидимим, щоб влаштовувати засідки чи тікати після вбивства (під час невидимості атакувати не може)</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2"> вміє тимчасово ставати повністю невидимим, щоб влаштовувати засідки чи
+                        тікати
+                        після
+                        вбивства (під час невидимості атакувати не може) </p>
+                  </article>
+               </div>
+               <div class="swiper-slide">
+                  <article class="section-2-article">
+                     <h4 class="h4-section-2">Viper</h4>
+                     <article class="card">
+                        <img class="card-img img-section-2" src="img/Viper_Splash_Art-360.jpg"
+                           srcset="img/Viper_Splash_Art-240.jpg 240w, img/Viper_Splash_Art-320.jpg 320w, img/Viper_Splash_Art-360.jpg 360w"
+                           sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 991px) 50vw, 25vw" alt="">
+                        <div class="overlay">
+                           <h2 class="card-title">Viper</h2>
+                           <p class="card-text">нещодавно додана роль, чия здатність замінює звичайне вбивство на «кислотну атаку». Тіло жертви поступово розчиняється. Коли воно зникає повністю, його більше не можна знайти та репортувати</p>
+                        </div>
+                     </article>
+                     <p class="p-section-2">нещодавно додана роль, чия здатність замінює звичайне вбивство на
+                        «кислотну
+                        атаку».
+                        Тіло
+                        жертви поступово розчиняється. Коли воно зникає повністю, його більше не можна знайти та
+                        репортувати
+                     </p>
+                  </article>
+
+               </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+         </div>
+
+
+         <!-- </div> -->
+
+
+
       </section>
+
+      <section class="section-3 container">
+         <div class="1">
+            <h1 class="h1-section-3">download</h1>
+            <p class="section-3-p">відкриваєш програму в якій ти скачав роблакс і в пошуку пишеш Among us</p>
+            <ul class="section-3-ul">
+
+               <li class="section-3-ul"><img src="img/app.png" alt=""></li>
+               <li class="section-3-ul"><img src="img/Знімок екрана 2026-07-20 о 08.10.10.png" alt=""></li>
+            </ul>
+         </div>
+
+
+
+
+
+         <img src="img/Unknown.jpeg"
+            srcset="img/Unknown-240.jpg 240w, img/Unknown-320.jpg 320w, img/Unknown-640.jpg 640w, img/Unknown.jpeg 989w"
+            sizes="(max-width: 767px) calc(100vw - 30px), 60vw" alt="" class="among-us-img">
+      </section>
+
+      <section class="section-4">
+
+         <div class="container section-4-flex">
+            <h1 class="title">
+               <span class="title-pink">Have Question</span> <span class="title-white">in Mind?</span>
+            </h1>
+            <div class="subtitle">Let us help you</div>
+
+            <div class="search-form">
+               <input type="text" class="search-input" placeholder="Enter your question">
+               <button type="submit" class="search-btn">Send</button>
+
+            </div>
+            </article>
+      </section>
+
+
+
    </main>
+   <footer class="footer">
+      <div class="footer-container">
+
+         <div class="footer-col footer-about">
+            <h2 class="footer-logo">Among us</h2>
+            <p class="footer-desc">Some food has looked so awful that it's looked like something that the dog's brought
+               home.</p>
+            <div class="footer-socials">
+               <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                     <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+               </a>
+               <a href="#" class="social-icon" aria-label="Facebook">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                     <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+               </a>
+               <a href="#" class="social-icon" aria-label="Twitter">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                     <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.75 10.975c-.005.106-.008.213-.008.32 0 3.292-2.507 7.087-7.087 7.087-1.405 0-2.712-.412-3.812-1.121.194.023.393.036.594.036 1.164 0 2.237-.397 3.091-1.065-1.087-.02-2.003-.736-2.318-1.721.378.072.771.057 1.144-.043-1.135-.229-1.987-1.229-1.987-2.427v-.031c.334.185.716.297 1.124.31-1.069-.714-1.774-1.933-1.774-3.308 0-.729.196-1.413.538-2.001 1.222 1.503 3.048 2.492 5.108 2.597-.063-.186-.098-.387-.098-.592 0-1.393 1.13-2.523 2.523-2.523.725 0 1.378.306 1.838.797.574-.113 1.114-.323 1.599-.611-.188.588-.588 1.082-1.108 1.394.51-.061 1-.197 1.454-.398-.339.508-.767.954-1.264 1.319z" />
+                  </svg>
+               </a>
+               <a href="#" class="social-icon" aria-label="YouTube">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                     <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                  </svg>
+               </a>
+            </div>
+         </div>
+
+
+         <div class="footer-col">
+            <h3 class="footer-title">MENU</h3>
+            <ul class="footer-menu">
+               <li><a href="#">Main</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Trainers</a></li>
+               <li><a href="#">Pricing</a></li>
+            </ul>
+         </div>
+
+
+         <div class="footer-col">
+            <h3 class="footer-title">CONTACTС</h3>
+            <p class="footer-text">831.466.3000</p>
+            <p class="footer-text"><a href="mailto:info@basketball.com">info@basketball.com</a></p>
+         </div>
+
+
+         <div class="footer-col">
+            <h3 class="footer-title">LOCATION</h3>
+            <p class="footer-text">1347 Pacific Avenue, Suite 201</p>
+            <p class="footer-text">Santa Cruz, CA, 95060</p>
+            <button class="btn btn2">Натисни мене</button>
+         </div>
+      </div>
+   </footer>
+
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
 </body>
+
 
 </html>
